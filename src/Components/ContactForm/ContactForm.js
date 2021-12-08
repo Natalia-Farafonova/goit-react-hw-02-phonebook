@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import s from './ContactForm.module.css';
 
 export default class ContactForm extends Component {
   state = {
@@ -49,7 +50,7 @@ export default class ContactForm extends Component {
             onChange={this.handleInputChange}
           />
         </div>
-        <button>Add contact</button>
+        <button className={s.btn}>Add contact</button>
       </form>
     );
   }

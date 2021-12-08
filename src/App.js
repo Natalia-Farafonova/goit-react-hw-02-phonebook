@@ -4,6 +4,7 @@ import ContactForm from './Components/ContactForm/ContactForm';
 import { nanoid } from 'nanoid';
 import ContactList from './Components/ContactList/ContactList';
 import Filter from './Components/Filter/Filter';
+import s from './App.module.css';
 
 export default class App extends Component {
   state = {
@@ -50,7 +51,7 @@ export default class App extends Component {
     );
 
     return (
-      <div>
+      <div className={s.wrapper}>
         <Section title="Phonebook">
           <ContactForm onSubmit={this.formSubmitHandler} />
         </Section>
